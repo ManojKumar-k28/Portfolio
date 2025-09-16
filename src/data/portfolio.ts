@@ -110,7 +110,7 @@ export const certifications = {
       link: "https://www.linkedin.com/posts/example-hackathon-cert",
     },
   ],
-  courses: [
+  courses: [      
     {
       title: "React Mastery",
       platform: "Udemy", 
