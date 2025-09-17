@@ -1,6 +1,11 @@
+// src/data/portfolio.ts
 import { Project, Skill, Education, Contact } from '../types';
 import internshipImg from "../assets/internship.jpg";
-
+import hackathon2 from "../assets/hackathon2.png";
+import hackathon3 from "../assets/hack.jpg";
+import internship1 from "../assets/internship1.png";
+import internship2 from "../assets/internship2.png";
+// -------------------- PROJECTS --------------------
 export const projects: Project[] = [
   {
     id: 'car-rental',
@@ -36,6 +41,7 @@ export const projects: Project[] = [
   }
 ];
 
+// -------------------- SKILLS --------------------
 export const skills: Skill[] = [
   { name: 'HTML5', level: 'Expert', icon: 'Code', category: 'frontend' },
   { name: 'CSS3', level: 'Advanced', icon: 'Palette', category: 'frontend' },
@@ -48,6 +54,7 @@ export const skills: Skill[] = [
   { name: 'MySQL', level: 'Intermediate', icon: 'HardDrive', category: 'database' }
 ];
 
+// -------------------- EDUCATION --------------------
 export const education: Education[] = [
   {
     id: 'mca',
@@ -82,6 +89,7 @@ export const education: Education[] = [
   }
 ];
 
+// -------------------- CONTACT --------------------
 export const contact: Contact = {
   email: 'kmanojkumar2874@gmail.com',
   phone: '+91 8144193599',
@@ -90,33 +98,89 @@ export const contact: Contact = {
   github: 'https://github.com/ManojKumar-k28'
 };
 
-
+// -------------------- CERTIFICATIONS --------------------
 export const certifications = {
   internships: [
     {
       title: "Web Development Intern",
-      org: "ABC Tech",
-      year: "2024",
-      image: '',  // ✅ variable, not string
-      link: "https://www.linkedin.com/posts/example-internship-cert",
+      org: "CodeSoft Technologies",
+      year: "2025",
+      image: internship1,
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_internship-activity-7369424048608460802-XEQi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
+    },
+    {
+      title: "PHP Developer Intern",
+      org: "Apex Planet Solutions",
+      year: "2025",
+      image: internship2,
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_certificate-activity-7354880727819173888-BiOt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
     },
   ],
   hackathons: [
     {
       title: "Codechronos Hackathon",
-      org: "Gov of India",
+      org: "Codechronos",
       year: "2025",
-      image: internshipImg,   // ✅ variable
-      link: "https://www.linkedin.com/posts/example-hackathon-cert",
+      image: internshipImg,
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_hackathon-activity-7373563005151662080-qpHA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
+    },
+    {
+      title: "HackShastra",
+      org: "HackShastra",
+      year: "2025",
+      image: hackathon2,
+      link: "https://www.linkedin.com/posts/example-hackathon-cert-2",
+    },
+    {
+      title: "Hack the Cosmos'25",
+      org: "SRM Institute of Science and Technology",
+      year: "2025",
+      image: hackathon3,  // <-- add file under src/assets/hackathon3.jpg
+      link: "http://unstop.com/certificate-preview/85fa85d3-6138-4d9a-8d03-f92eed53f606",
+    },
+        {
+      title: "Global AI Hackathon",
+      org: "Microsoft",
+      year: "2023",
+      image: '',  // <-- add file under src/assets/hackathon3.jpg
+      link: "https://www.linkedin.com/posts/example-ai-hackathon",
+    },
+    {
+      title: "Blockchain Hackathon",
+      org: "IIT Delhi",
+      year: "2023",
+      image: '',  // <-- add file under src/assets/hackathon4.jpg
+      link: "https://www.linkedin.com/posts/example-blockchain-hackathon",
+    },
+    {
+      title: "Cybersecurity CTF",
+      org: "DEF CON India",
+      year: "2022",
+      image: '',  // <-- add file under src/assets/hackathon5.jpg
+      link: "https://www.linkedin.com/posts/example-cybersecurity-hackathon",
     },
   ],
-  courses: [      
+  courses: [
     {
       title: "React Mastery",
-      platform: "Udemy", 
+      platform: "Udemy",
       year: "2024",
-      image: '',       // ✅ variable
+      image: "https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg",
       link: "https://www.linkedin.com/posts/example-react-cert",
+    },
+    {
+      title: "Node.js Advanced",
+      platform: "Coursera",
+      year: "2023",
+      image: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
+      link: "https://www.linkedin.com/posts/example-node-cert",
+    },
+    {
+      title: "Database Design",
+      platform: "edX",
+      year: "2023",
+      image: "https://images.pexels.com/photos/5900442/pexels-photo-5900442.jpeg",
+      link: "https://www.linkedin.com/posts/example-database-cert",
     },
   ],
 };
