@@ -9,6 +9,7 @@ import {
   SiPython,
   SiMysql,
   SiPostgresql,
+  SiMongodb,
 } from 'react-icons/si';
 import { FaDatabase } from 'react-icons/fa';
 import { Smartphone } from 'lucide-react';
@@ -82,6 +83,13 @@ const Skills = () => {
       icon: SiPostgresql,
       category: 'database',
       color: 'from-blue-600 to-purple-600',
+    },
+      {
+      name: 'MongoDB',
+      level: 'Intermediate',
+      icon: SiMongodb,
+      category: 'database',
+      color: 'from-green-700 to-green-700',
     },
     {
       name: 'Database Fundamentals',

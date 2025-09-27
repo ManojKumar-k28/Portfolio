@@ -1,10 +1,24 @@
 // src/data/portfolio.ts
 import { Project, Skill, Education, Contact } from '../types';
+
 import internshipImg from "../assets/internship.jpg";
 import hackathon2 from "../assets/hackathon2.png";
 import hackathon3 from "../assets/hack.jpg";
 import internship1 from "../assets/internship1.png";
 import internship2 from "../assets/internship2.png";
+import react from "../assets/react.png";
+import python from "../assets/python.png";
+import typescript from "../assets/typescript.png";
+import datascience from "../assets/Datascien.png";
+import data from "../assets/data.png";
+import acquire from "../assets/Acquiring.png";
+import preprocess from "../assets/preprocess.png";
+import cyber from "../assets/cyber.png";
+import careers from "../assets/careeress.png";
+
+// Add placeholder image for missing certificates
+
+
 // -------------------- PROJECTS --------------------
 export const projects: Project[] = [
   {
@@ -135,51 +149,73 @@ export const certifications = {
       title: "Hack the Cosmos'25",
       org: "SRM Institute of Science and Technology",
       year: "2025",
-      image: hackathon3,  // <-- add file under src/assets/hackathon3.jpg
+      image: hackathon3,
       link: "http://unstop.com/certificate-preview/85fa85d3-6138-4d9a-8d03-f92eed53f606",
     },
-        {
-      title: "Global AI Hackathon",
-      org: "Microsoft",
-      year: "2023",
-      image: '',  // <-- add file under src/assets/hackathon3.jpg
-      link: "https://www.linkedin.com/posts/example-ai-hackathon",
-    },
-    {
-      title: "Blockchain Hackathon",
-      org: "IIT Delhi",
-      year: "2023",
-      image: '',  // <-- add file under src/assets/hackathon4.jpg
-      link: "https://www.linkedin.com/posts/example-blockchain-hackathon",
-    },
-    {
-      title: "Cybersecurity CTF",
-      org: "DEF CON India",
-      year: "2022",
-      image: '',  // <-- add file under src/assets/hackathon5.jpg
-      link: "https://www.linkedin.com/posts/example-cybersecurity-hackathon",
-    },
+    
   ],
   courses: [
     {
-      title: "React Mastery",
-      platform: "Udemy",
-      year: "2024",
-      image: "https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg",
+      title: "React",
+      platform: "Coursera",
+      year: "2025",
+      image: react,
       link: "https://www.linkedin.com/posts/example-react-cert",
     },
     {
-      title: "Node.js Advanced",
+      title: "Python",
       platform: "Coursera",
-      year: "2023",
-      image: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
+      year: "2025",
+      image: python,
+      link: "https://www.linkedin.com/posts/example-react-cert",
+    },
+    {
+      title: "Typescript for Beginners",
+      platform: "Adhiyamaan College of Engineering",
+      year: "2025",
+      image: typescript,
       link: "https://www.linkedin.com/posts/example-node-cert",
     },
     {
-      title: "Database Design",
-      platform: "edX",
-      year: "2023",
-      image: "https://images.pexels.com/photos/5900442/pexels-photo-5900442.jpeg",
+      title: "Datascience",
+      platform: "Adhiyamaan College of Engineering",
+      year: "2024",
+      image: datascience,
+      link: "https://www.linkedin.com/posts/example-database-cert",
+    },
+    {
+      title: "Exploratory Data Analysis",
+      platform: "Future Skills Prime",
+      year: "2025",
+      image: data,
+      link: "https://www.linkedin.com/posts/example-database-cert",
+    },
+    {
+      title: "Acquiring Data (Level 1 - AI Fundamentals of AI ASCEND) by Accenture",
+      platform: "Future Skills Prime",
+      year: "2025",
+      image: acquire,
+      link: "https://www.linkedin.com/posts/example-database-cert",
+    },
+    {
+      title: "Data Processing and Visualization (Level 2 - AI Ready of AI ASCEND) by Accenture",
+      platform: "Future Skills Prime",
+      year: "2025",
+      image: preprocess,
+      link: "https://www.linkedin.com/posts/example-database-cert",
+    },
+    {
+      title: "Career Essentials in Cybersecurity by Microsoft and LinkedIn",
+      platform: "Linkedin Learning",
+      year: "2025",
+      image: cyber,
+      link: "https://www.linkedin.com/posts/example-database-cert",
+    },
+    {
+      title: "Career Essentials in Generative AI by Microsoft and LinkedIn",
+      platform: "Linkedin Learning",
+      year: "2025",
+      image: careers,
       link: "https://www.linkedin.com/posts/example-database-cert",
     },
   ],
