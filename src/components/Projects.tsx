@@ -1,6 +1,6 @@
 import React from 'react';
 import { projects } from '../data/portfolio';
-import { ExternalLink, Github} from 'lucide-react';
+import { ExternalLink, Github  } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/40 to-slate-900">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(236,72,153,0.15),rgba(255,255,255,0))]"></div>
-
+        
         {/* Geometric Shapes */}
         <div className="absolute top-20 right-20 w-32 h-32 border border-cyan-400/10 rounded-full animate-spin-slow"></div>
         <div className="absolute bottom-20 left-20 w-24 h-24 border border-purple-400/10 rotate-45 animate-pulse"></div>
@@ -35,7 +35,7 @@ const Projects = () => {
             >
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
+              
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={project.image}
@@ -43,7 +43,7 @@ const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-
+                
                 {/* Overlay Buttons */}
                 <div className="absolute bottom-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <button className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-colors transform hover:scale-110">
@@ -59,7 +59,7 @@ const Projects = () => {
                   {index + 1}
                 </div>
               </div>
-
+              
               <div className="p-6 relative">
                 {/* Technology Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -72,7 +72,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-
+                
                 <h4 className="text-xl font-semibold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
                   {project.title}
                 </h4>
@@ -80,8 +80,7 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Featured Badge */}
-          
+                
 
                 {/* Hover Indicator */}
                 <div className="absolute bottom-4 right-4 w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -92,16 +91,14 @@ const Projects = () => {
 
         {/* View More Button */}
         <div className="text-center mt-12">
-         <div className="text-center mt-12">
-  <button
-    onClick={() => window.open("https://github.com/manojkumar-k28", "_blank")}
-    className="group bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-cyan-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-cyan-500/25 flex items-center justify-center gap-3 mx-auto"
-  >
-    <Github className="w-5 h-5" />
-    View All Projects
-    <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-  </button>
-</div>
+          <button
+            onClick={() => window.open("https://github.com/manojkumar-k28", "_blank")}
+            className="group bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-cyan-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-cyan-500/25 flex items-center justify-center gap-3 mx-auto"
+          >
+            <Github className="w-5 h-5" />
+            View All Projects
+            <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+          </button>
         </div>
       </div>
     </section>

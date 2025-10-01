@@ -4,7 +4,6 @@ export interface Project {
   description: string;
   image: string;
   technologies: string[];
-
 }
 
 export interface Skill {

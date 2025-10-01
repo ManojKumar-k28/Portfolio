@@ -27,14 +27,14 @@ export const projects: Project[] = [
     description: 'A comprehensive system for managing car rentals, featuring an intuitive booking interface and admin dashboard with real-time availability tracking.',
     image: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=600',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'SQL'],
-    
+ 
   },
   {
     id: 'expense-tracker',
-    title: 'Income & Expense Tracker with Voice Assistant',
+    title: 'Income & Expense Tracker',
     description: 'Smart financial management tool with detailed analytics, customizable reporting features, and budget planning capabilities.',
     image: 'https://images.pexels.com/photos/7821517/pexels-photo-7821517.jpeg?auto=compress&cs=tinysrgb&w=600',
-    technologies: ['HTML5', 'CSS3', 'JavaScript','ReactJs','Express','MongoDB'],
+     technologies: ['HTML5', 'CSS3', 'JavaScript','React', 'Express', 'MongoDB', 'Node.js'],
 
   },
   {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     description: 'Modern weather app featuring real-time updates, location-based forecasts, interactive maps, and detailed weather analytics.',
     image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
     technologies: ['React', 'API Integration', 'JavaScript'],
- 
+
   },
   {
     id: 'personal-blog',
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     description: 'Full-featured blogging platform with user authentication, content management, commenting system, and SEO optimization. Built with modern PHP architecture.',
     image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
     technologies: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript'],
- 
+
   }
 ];
 
