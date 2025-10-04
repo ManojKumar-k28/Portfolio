@@ -1,20 +1,20 @@
 // src/data/portfolio.ts
 import { Project, Skill, Education, Contact } from '../types';
 
-import internshipImg from "../assets/internship.jpg";
-import hackathon2 from "../assets/hackathon2.png";
-import hackathon3 from "../assets/hack.jpg";
-import internship1 from "../assets/internship1.png";
-import internship2 from "../assets/internship2.png";
-import react from "../assets/react.png";
-import python from "../assets/python.png";
-import typescript from "../assets/typescript.png";
-import datascience from "../assets/Datascien.png";
-import data from "../assets/data.png";
-import acquire from "../assets/Acquiring.png";
-import preprocess from "../assets/preprocess.png";
-import cyber from "../assets/cyber.png";
-import careers from "../assets/careeress.png";
+import internshipImg from "../../public/assets/internship.jpg";
+import hackathon2 from "../../public/assets/hackathon2.png";
+import hackathon3 from "../../public/assets/hack.jpg";
+import internship1 from "../../public/assets/internship1.png";
+import internship2 from "../../public/assets/internship2.png";
+import react from "../../public/assets/react.png";
+import python from "../../public/assets/python.png";
+import typescript from "../../public/assets/typescript.png";
+import datascience from "../../public/assets/Datascien.png";
+import data from "../../public/assets/data.png";
+import acquire from "../../public/assets/Acquiring.png";
+import preprocess from "../../public/assets/preprocess.png";
+import cyber from "../../public/assets/cyber.png";
+import careers from "../../public/assets/careeress.png";
 
 // Add placeholder image for missing certificates
 
@@ -167,28 +167,28 @@ export const certifications = {
       platform: "Coursera",
       year: "2025",
       image: python,
-      link: "https://www.linkedin.com/posts/example-react-cert",
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_completion-certificate-for-concepts-in-python-activity-7321991591919763457-Zy-c?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
     },
     {
       title: "Typescript for Beginners",
       platform: "Adhiyamaan College of Engineering",
       year: "2025",
       image: typescript,
-      link: "https://www.linkedin.com/posts/example-node-cert",
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_typescript-webdevelopment-frontenddevelopment-activity-7326562682415783936-aMbj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
     },
     {
       title: "Datascience",
       platform: "Adhiyamaan College of Engineering",
       year: "2024",
       image: datascience,
-      link: "https://www.linkedin.com/posts/example-database-cert",
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_datascience-python-datasciencewithpython-activity-7326436182546886657-_s48?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
     },
     {
       title: "Exploratory Data Analysis",
       platform: "Future Skills Prime",
       year: "2025",
       image: data,
-      link: "https://www.linkedin.com/posts/example-database-cert",
+      link: "https://www.linkedin.com/posts/example-database-certhttps://www.linkedin.com/posts/manoj-kumar-k28_exploratorydataanalysis-futureskillsprime-activity-7337011731107389440-PDQ4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
     },
     {
       title: "Acquiring Data (Level 1 - AI Fundamentals of AI ASCEND) by Accenture",
@@ -209,14 +209,14 @@ export const certifications = {
       platform: "Linkedin Learning",
       year: "2025",
       image: cyber,
-      link: "https://www.linkedin.com/posts/example-database-cert",
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_certificate-of-completion-activity-7286204639534817280-K-rL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
     },
     {
       title: "Career Essentials in Generative AI by Microsoft and LinkedIn",
       platform: "Linkedin Learning",
       year: "2025",
       image: careers,
-      link: "https://www.linkedin.com/posts/example-database-cert",
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_certificate-of-completion-activity-7316073154760609792-rY-o?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE",
     },
   ],
 };
