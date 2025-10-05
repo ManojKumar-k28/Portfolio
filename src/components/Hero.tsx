@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronDown, Code, Mail, ArrowRight, Download, Eye } from 'lucide-react';
-import image from './IMG_20250914_175205_656.webp';
+import image from '../../public/assets/IMG_20250914_175205_656.webp';
 import resume from '../../public/assets/New_resume.pdf';
 
 const Hero = () => {
