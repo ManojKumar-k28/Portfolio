@@ -4,7 +4,6 @@ export interface Project {
   description: string;
   image: string;
   technologies: string[];
-  featured: boolean;
 }
 
 export interface Skill {

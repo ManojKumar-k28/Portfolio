@@ -1,6 +1,6 @@
 import React from 'react';
 import { projects } from '../data/portfolio';
-import { ExternalLink, Github, Sparkles } from 'lucide-react';
+import { ExternalLink, Github  } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -80,13 +80,7 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Featured Badge */}
-                {project.featured && (
-                  <div className="absolute top-4 right-4 flex items-center space-x-1 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-medium">
-                    <Sparkles className="w-3 h-3" />
-                    <span>Featured</span>
-                  </div>
-                )}
+                
 
                 {/* Hover Indicator */}
                 <div className="absolute bottom-4 right-4 w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -97,7 +91,10 @@ const Projects = () => {
 
         {/* View More Button */}
         <div className="text-center mt-12">
-          <button className="group bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-cyan-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-cyan-500/25 flex items-center justify-center gap-3 mx-auto">
+          <button
+            onClick={() => window.open("https://github.com/manojkumar-k28", "_blank")}
+            className="group bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-cyan-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-cyan-500/25 flex items-center justify-center gap-3 mx-auto"
+          >
             <Github className="w-5 h-5" />
             View All Projects
             <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
