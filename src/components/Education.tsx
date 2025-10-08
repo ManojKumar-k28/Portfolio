@@ -5,12 +5,12 @@ import { GraduationCap, Award, BookOpen, School, Calendar, MapPin } from 'lucide
 const Education = () => {
   const getIcon = (index: number) => {
     const icons = [
-      <GraduationCap className="w-6 h-6" />,
-      <Award className="w-6 h-6" />,
-      <BookOpen className="w-6 h-6" />,
-      <School className="w-6 h-6" />
+      <GraduationCap key="grad" className="w-6 h-6" />,
+      <Award key="award" className="w-6 h-6" />,
+      <BookOpen key="book" className="w-6 h-6" />,
+      <School key="school" className="w-6 h-6" />
     ];
-    return icons[index] || <GraduationCap className="w-6 h-6" />;
+    return icons[index] || <GraduationCap key="default" className="w-6 h-6" />;
   };
 
   const getStatusColor = (status: string) => {
@@ -48,60 +48,68 @@ const Education = () => {
         </div>
 
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-cyan-500 via-purple-500 to-pink-500 opacity-30"></div>
+          {/* Responsive Timeline line */}
+          <div className="absolute left-5 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-cyan-500 via-purple-500 to-pink-500 opacity-30"></div>
 
           <div className="space-y-12">
             {education.map((item, index) => (
-              <div
-                key={item.id}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'
-                } justify-between`}
-              >
-                {/* Timeline dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full z-10 shadow-lg">
+              <div key={item.id} className="relative">
+                {/* Responsive Timeline dot */}
+                <div className="absolute top-5 left-5 md:left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full z-10 shadow-lg">
                   <div className="absolute inset-1 bg-slate-900 rounded-full"></div>
                 </div>
 
-                {/* Content */}
-                <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pl-8' : 'md:pr-8'}`}>
-                  <div className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                    {/* Glow Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-xl flex items-center justify-center mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        {getIcon(index)}
-                      </div>
-                      <div className="flex items-center text-sm font-medium text-cyan-400 bg-cyan-900/30 px-3 py-1 rounded-full border border-cyan-700">
-                        <Calendar className="w-4 h-4 mr-2" />
-                        {item.duration}
-                      </div>
-                    </div>
-                    
-                    <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
-                      {item.degree}
-                    </h4>
-                    
-                    <div className="flex items-center text-gray-400 mb-4">
-                      <MapPin className="w-4 h-4 mr-2" />
-                      <p>{item.institution}</p>
-                    </div>
-                    
-                    <div className="flex items-center">
-                      <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${getStatusColor(item.status)} shadow-lg`}>
-                        {getStatusText(item)}
-                      </span>
-                    </div>
+                {/* Content container that handles desktop alternating layout */}
+                <div
+                  className={`md:flex items-center ${
+                    index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'
+                  }`}
+                >
+                  {/* Content Card */}
+                  <div className="w-full md:w-5/12">
+                    <div
+                      className={`pl-14 md:pl-0 ${
+                        index % 2 === 0 ? 'md:pl-8' : 'md:pr-8'
+                      }`}
+                    >
+                      <div className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                        {/* Glow Effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                        <div className="flex items-center mb-4">
+                          <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-xl flex items-center justify-center mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            {getIcon(index)}
+                          </div>
+                          <div className="flex items-center text-sm font-medium text-cyan-400 bg-cyan-900/30 px-3 py-1 rounded-full border border-cyan-700">
+                            <Calendar className="w-4 h-4 mr-2" />
+                            {item.duration}
+                          </div>
+                        </div>
+                        
+                        <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+                          {item.degree}
+                        </h4>
+                        
+                        <div className="flex items-center text-gray-400 mb-4">
+                          <MapPin className="w-4 h-4 mr-2" />
+                          <p>{item.institution}</p>
+                        </div>
+                        
+                        <div className="flex items-center">
+                          <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${getStatusColor(item.status)} shadow-lg`}>
+                            {getStatusText(item)}
+                          </span>
+                        </div>
 
-                    {/* Hover Indicator */}
-                    <div className="absolute top-4 right-4 w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        {/* Hover Indicator */}
+                        <div className="absolute top-4 right-4 w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                    </div>
                   </div>
-                </div>
 
-                {/* Empty space for alternating layout */}
-                <div className="hidden md:block w-5/12"></div>
+                  {/* Empty space for alternating layout on desktop */}
+                  <div className="hidden md:block w-5/12"></div>
+                </div>
               </div>
             ))}
           </div>

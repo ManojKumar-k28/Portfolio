@@ -4,7 +4,10 @@ export interface Project {
   description: string;
   image: string;
   technologies: string[];
+  liveUrl?: string; 
+  repoUrl?: string;
 }
+
 
 export interface Skill {
   name: string;

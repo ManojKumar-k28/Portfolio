@@ -1,6 +1,6 @@
 import React from 'react';
 import { projects } from '../data/portfolio';
-import { ExternalLink, Github  } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -44,29 +44,45 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                 
-                {/* Overlay Buttons */}
-                <div className="absolute bottom-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-colors transform hover:scale-110">
-                    <ExternalLink className="w-5 h-5" />
-                  </button>
-                  <button className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-colors transform hover:scale-110">
-                    <Github className="w-5 h-5" />
-                  </button>
+                {/* --- MODIFIED: Overlay Buttons --- */}
+                <div className="absolute bottom-4 right-4 flex space-x-2 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View live demo of ${project.title}`}
+                      className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-colors transform hover:scale-110"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
+                  {project.repoUrl && (
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View source code of ${project.title}`}
+                      className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-colors transform hover:scale-110"
+                    >
+                      <Github className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
 
                 {/* Project Number */}
                 <div className="absolute top-4 left-4 w-8 h-8 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  {index + 1}
+                  {String(index + 1).padStart(2, '0')}
                 </div>
               </div>
               
               <div className="p-6 relative">
                 {/* Technology Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
+                  {project.technologies.map((tech) => (
                     <span
-                      key={techIndex}
-                      className="px-3 py-1 bg-gradient-to-r from-slate-700 to-slate-600 text-gray-300 text-sm rounded-full font-medium border border-gray-600 hover:border-cyan-400 transition-colors"
+                      key={tech}
+                      className="px-3 py-1 bg-gradient-to-r from-slate-700 to-slate-600 text-gray-300 text-xs sm:text-sm rounded-full font-medium border border-gray-600"
                     >
                       {tech}
                     </span>
@@ -80,8 +96,6 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                
-
                 {/* Hover Indicator */}
                 <div className="absolute bottom-4 right-4 w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -90,15 +104,17 @@ const Projects = () => {
         </div>
 
         {/* View More Button */}
-        <div className="text-center mt-12">
-          <button
-            onClick={() => window.open("https://github.com/manojkumar-k28", "_blank")}
-            className="group bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-cyan-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-cyan-500/25 flex items-center justify-center gap-3 mx-auto"
+        <div className="text-center mt-16">
+          <a
+            href="https://github.com/manojkumar-k28"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-cyan-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-cyan-500/25"
           >
             <Github className="w-5 h-5" />
             View All Projects
             <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
+          </a>
         </div>
       </div>
     </section>
