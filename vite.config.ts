@@ -21,5 +21,4 @@ export default defineConfig({
     // but I'm keeping it as it was in your original config.
     // You can likely remove it if you don't have a specific reason for it.
     exclude: ['lucide-react'], 
-  },
-});
+  },});
