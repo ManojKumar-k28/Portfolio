@@ -161,7 +161,7 @@ export const certifications = {
       platform: "Coursera",
       year: "2025",
       image: react,
-      link: "https://www.coursera.org/account/accomplishments/verify/3VOSRKQ84OHH?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project" // <-- UPDATE THIS
+      link: "https://www.coursera.org/account/accomplishments/verify/3VOSRKQ84OHH?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project", // <-- UPDATE THIS
     },
     {
       title: "Python",
