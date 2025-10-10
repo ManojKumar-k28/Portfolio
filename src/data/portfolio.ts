@@ -1,20 +1,20 @@
+// src/data/portfolio.ts
 import { Project, Skill, Education, Contact } from '../types';
 
-import internshipImg from "/assets/internship.jpg";
-import hackathon2 from "/assets/hackathon2.png";
-import hackathon3 from "/assets/hack.jpg";
-import internship1 from "/assets/internship1.png";
-import internship2 from "/assets/internship2.png";
-import react from "/assets/react.png";
-import python from "/assets/python.png";
-import typescript from "/assets/typescript.png";
-import datascience from "/assets/Datascien.png";
-import data from "/assets/data.png";
-import acquire from "/assets/Acquiring.png";
-import preprocess from "/assets/preprocess.png";
-import cyber from "/assets/cyber.png";
-import careers from "/assets/careeress.png";
-
+import internshipImg from "../assets/internship.jpg";
+import hackathon2 from "../assets/hackathon2.png";
+import hackathon3 from "../assets/hack.jpg";
+import internship1 from "../assets/internship1.png";
+import internship2 from "../assets/internship2.png";
+import react from "../assets/react.png";
+import python from "../assets/python.png";
+import typescript from "../assets/typescript.png";
+import datascience from "../assets/Datascien.png";
+import data from "../assets/data.png";
+import acquire from "../assets/Acquiring.png";
+import preprocess from "../assets/preprocess.png";
+import cyber from "../assets/cyber.png";
+import careers from "../assets/careeress.png";
 
 // -------------------- PROJECTS --------------------
 export const projects: Project[] = [
@@ -161,7 +161,7 @@ export const certifications = {
       platform: "Coursera",
       year: "2025",
       image: react,
-      link: "https://www.linkedin.com/posts/example-react-cert", // <-- UPDATE THIS
+      link: "https://www.coursera.org/account/accomplishments/verify/3VOSRKQ84OHH?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project" // <-- UPDATE THIS
     },
     {
       title: "Python",
@@ -203,7 +203,7 @@ export const certifications = {
       platform: "Future Skills Prime",
       year: "2025",
       image: preprocess,
-      link: "https://www.linkedin.com/posts/example-database-cert", // <-- UPDATE THIS
+      link: "https://www.linkedin.com/posts/manoj-kumar-k28_swayam-activity-7381552267012890624-U3Me?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeFEFIB9iiy1WorgqQgQFlH8vysgJltwWE", // <-- UPDATE THIS
     },
     {
       title: "Career Essentials in Cybersecurity by Microsoft and LinkedIn",
