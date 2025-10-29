@@ -36,7 +36,7 @@ const Skills = () => {
     { name: 'Node.js', level: 'Intermediate', icon: SiNodedotjs, category: 'backend', color: 'from-green-600 to-green-700' },
     { name: 'PHP', level: 'Intermediate', icon: SiPhp, category: 'backend', color: 'from-purple-500 to-indigo-500' },
     { name: 'Python', level: 'Intermediate', icon: SiPython, category: 'backend', color: 'from-green-500 to-emerald-500' },
-
+{ name: 'Express.js', level: 'Intermediate', icon: SiNodedotjs, category: 'backend', color: 'from-gray-600 to-gray-800' },
     // Database
     { name: 'MySQL', level: 'Intermediate', icon: SiMysql, category: 'database', color: 'from-orange-600 to-red-600' },
     { name: 'PostgreSQL', level: 'Intermediate', icon: SiPostgresql, category: 'database', color: 'from-blue-600 to-purple-600' },
