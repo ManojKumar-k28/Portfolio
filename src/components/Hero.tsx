@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronDown, Code, Mail, ArrowRight, Download, Eye } from 'lucide-react';
 import image from '../assets/IMG_20250914_175205_656.webp';
-import resume from '../assets/New_resume.pdf';
+import resume from '../assets/Manoj_kumar.pdf';
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
