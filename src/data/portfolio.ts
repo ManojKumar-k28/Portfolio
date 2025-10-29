@@ -64,6 +64,7 @@ export const skills: Skill[] = [
   { name: 'React', level: 'Intermediate', icon: 'Code', category: 'frontend' },
   { name: 'Python', level: 'Intermediate', icon: 'FileCode', category: 'backend' },
   { name: 'Node.js', level: 'Intermediate', icon: 'Server', category: 'backend' },
+  { name: 'Express.js', level: 'Intermediate', icon: 'Server', category: 'backend' },
   { name: 'PHP', level: 'Intermediate', icon: 'Globe', category: 'backend' },
   { name: 'SQL', level: 'Intermediate', icon: 'Database', category: 'database' },
   { name: 'MySQL', level: 'Intermediate', icon: 'HardDrive', category: 'database' }
