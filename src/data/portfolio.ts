@@ -15,7 +15,7 @@ import acquire from "../assets/Acquiring.png";
 import preprocess from "../assets/preprocess.png";
 import cyber from "../assets/cyber.png";
 import careers from "../assets/careeress.png";
-import project from "../assets/project_1.jpeg";
+import project from "../assets/project.jpeg";
 // -------------------- PROJECTS --------------------
 export const projects: Project[] = [
   {
